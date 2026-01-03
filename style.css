@@ -3,3 +3,8 @@
     src: url(./fonts/Norsebold.otf);
     font-weight: bold;
 }
+
+:root {
+    --button-color: #7C1948;
+    --border-color: #E5E7EB;
+}
