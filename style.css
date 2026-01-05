@@ -164,6 +164,12 @@ form > *,
     margin: 0 100px 0 50px;
 }
 
+.description {
+    font-size: 24px;
+    font-weight: 600;
+    width: clamp(45ch, 50ch, 70ch);
+}
+
 .norse-font {
     font-family: norseBold;
     font-size: 80px;
