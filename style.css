@@ -82,21 +82,23 @@ body {
         "wdth" 100;
 }
 
-#left-container, 
-#right-container, 
+form {
+    box-shadow: 
+        0 5px 5px rgba(0, 0, 0, 0.2),
+        0 -5px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#left-container,
 #left-container > div {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#left-container, 
-#right-container {
-    flex-direction: column;
     height: 100vh;
 }
 
 #left-container {
+    flex-direction: column;
     width: 30vw;
     aspect-ratio: 1 / 1;
     background-image: url(./images/large-bg-image.jpg);
@@ -125,6 +127,14 @@ body {
 
 #logo {
     width: 5vw;
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    gap: 20px;
 }
 
 .norse-font {
