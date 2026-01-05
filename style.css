@@ -7,6 +7,8 @@
 :root {
     --button-color: #7C1948;
     --border-color: #E5E7EB;
+    --form-text-color: rgb(70, 70, 70);
+    --text-color: rgb(42, 42, 42);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -89,6 +91,13 @@ form {
     width: 100%;
 }
 
+label {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.2ch;
+    color: var(--form-text-color);
+}
+
 #left-container,
 #left-container > div {
     display: flex;
@@ -167,10 +176,33 @@ form > * {
     margin: 20px 100px 20px 50px;
 }
 
+form > div:last-child {
+    margin-bottom: 40px;
+}
+
 form p,
 .description {
     font-size: 24px;
     font-weight: 600;
+    color: var(--text-color);
+}
+
+form input {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+form input:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+form input:invalid {
+    border-color: red;
+    outline: none;
 }
 
 .description {
@@ -180,4 +212,16 @@ form p,
 .norse-font {
     font-family: norseBold;
     font-size: 80px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
