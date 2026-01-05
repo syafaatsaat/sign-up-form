@@ -85,7 +85,7 @@ body {
 form {
     box-shadow: 
         0 5px 5px rgba(0, 0, 0, 0.2),
-        0 -5px 5px rgba(0, 0, 0, 0.2);
+        0 -1px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 
@@ -159,14 +159,21 @@ form {
 }
 
 form ~ *,
-form > *,
 .description {
     margin: 0 100px 0 50px;
 }
 
+form > * {
+    margin: 20px 100px 20px 50px;
+}
+
+form p,
 .description {
     font-size: 24px;
     font-weight: 600;
+}
+
+.description {
     width: clamp(45ch, 50ch, 70ch);
 }
 
