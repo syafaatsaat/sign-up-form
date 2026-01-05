@@ -200,7 +200,7 @@ form input:focus {
     outline: none;
 }
 
-form input:invalid {
+form input:user-invalid {
     border-color: red;
     outline: none;
 }
