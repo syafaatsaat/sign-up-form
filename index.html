@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up Form</title>
 
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="left-container">
-        <div>
-            <img src="./images/odin-lined.png" alt="logo" />
-            <p>ODIN</p>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="left-container">
+            <div>
+                <img src="./images/odin-lined.png" alt="logo" id="logo">
+                <p class="norse-font">ODIN</p>
+            </div>
+            <p>
+                Photo by 
+                <a href="https://unsplash.com/photos/
+                two-stars-in-the-middle-of-a-black-sky-fsH1KjbdjE8">
+                    Alexander Andrews</a> on
+                <a href="https://unsplash.com/">Unsplash</a>
+            </p>
         </div>
-        <p>
-            Photo by 
-            <a href="https://unsplash.com/photos/
-            two-stars-in-the-middle-of-a-black-sky-fsH1KjbdjE8">
-                Alexander Andrews
-            </a> on
-            <a href="https://unsplash.com/">Unsplash</a>
-        </p>
-    </div>
-    <div id="right-container">
-        <p>
-            This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-            Sign up <em>now</em> to get started.
-        </p>
-        <p>
-            You <em>know</em> you want to.
-        </p>
+        <div id="right-container">
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
 
-        <form action="">
-            <header>
-                <p>Let's do this!</p>
-            </header>
+            <form action="">
+                <header>
+                    <p>Let's do this!</p>
+                </header>
 
-            <div class="form-row">
-                <label for="first-name">FIRST NAME</label>
-                <input id="first-name" name="first-name" type="text">
+                <div class="form-row">
+                    <label for="first-name">FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text">
 
-                <label for="last-name">LAST NAME</label>
-                <input id="last-name" name="last-name" type="text">
-            </div>
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" name="last-name" type="text">
+                </div>
 
-            <div class="form-row">
-                <label for="email">EMAIL</label>
-                <input id="email" name="email" type="email">
+                <div class="form-row">
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email">
 
-                <label for="phone-num">LAST NAME</label>
-                <input id="phone-num" name="phone-num" type="tel">
-            </div>
+                    <label for="phone-num">LAST NAME</label>
+                    <input id="phone-num" name="phone-num" type="tel">
+                </div>
 
-            <div class="form-row">
-                <label for="password">PASSWORD</label>
-                <input id="password" name="password" type="password">
+                <div class="form-row">
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="password" type="password">
 
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input id="confirm-password" 
-                name="confirm-password" type="password">
-            </div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input id="confirm-password" 
+                    name="confirm-password" type="password">
+                </div>
 
-            <button>Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </form>
-    </div>
-</body>
+                <button>Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </form>
+        </div>
+    </body>
 </html>
